@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik">
+  <title>Time tracking dashboard by Lydia Eluro</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="section1">
+      <div id="profile">
+        <div><img src="images/image-jeremy.png" alt="profile picture"></div>
+        <!-- <div><img src="images/icon-play.svg" alt="profile picture"></div> -->
+        <div class="profilePt2"><p><small>Report for</small></p>
+        <p class="name">Jeremy <span class="lastName">Robson</span></p> 
+        </div>
+      </div>
+      
+      <div id="time">
+        <p><button onclick="callDailyTime()">Daily</button></p>
+        <p><button onclick= "callWeeklyTime()">Weekly</button></p>
+        <p><button onclick = "callMonthlyTime()">Monthly</button></p>
+      </div>
+    </section>  
+
+    <section id= "section2">  
+      
+      <div class="card" id="work">
+        <p class="title">Work</p>
+        <div class="pWrapper">
+          <p class="time">5hrs</p> <!-- daily -->
+          <p class="previous"><span class="previousWords"> Yesterday </span> - <span class="previousTime">7hrs</span></p> <!-- daily -->
+        </div>  
+
+        <div hidden> 30hrs <!-- weekly -->
+        Previous - 36hrs <!-- weekly -->
+        103hrs <!-- monthly -->
+        Previous - 128hrs <!-- monthly --></div>
+      </div>
+
+      <div class="card" id="play">
+        <p class="title">Play</p>
+        <div class="pWrapper">
+          <p class="time">1hr</p> <!-- daily -->
+          <p class="previous"><span class="previousWords"> Yesterday </span> - <span class="previousTime"> 2hrs</span></p> <!-- daily -->
+        </div>
+        <div hidden>10hrs <!-- weekly -->
+        Previous - 8hrs <!-- weekly -->
+        23hrs <!-- monthly -->
+        Previous - 29hrs <!-- monthly --></div>
+      </div>
+
+      <div class="card" id="study">
+        <p class="title">Study</p>
+        <div class="pWrapper">
+          <p class="time">0hr</p> <!-- daily -->
+          <p class="previous"><span class="previousWords"> Yesterday </span> - <span class="previousTime">1hr</span></p> <!-- daily -->
+        </div>
+
+        <div hidden>4hrs <!-- weekly -->
+        Previous - 7hrs <!-- weekly -->
+        13hrs <!-- monthly -->
+        Previous - 19hrs <!-- monthly --></div>
+      </div>
+
+      <div class="card" id="exercise">
+        <p class="title">Exercise</p>
+        <div class="pWrapper">
+          <p class="time">1hr</p> <!-- daily -->
+          <p class="previous"><span class="previousWords"> Yesterday </span> - <span class="previousTime">1hr</span></p> <!-- daily -->
+        </div>
+
+        <div hidden>4hrs <!-- weekly -->
+        Previous - 5hrs <!-- weekly -->
+        11hrs <!-- monthly -->
+        Previous - 18hrs <!-- monthly --> </div>
+      </div>
+      <div class="card" id="social">
+        <p class="title">Social</p>
+        <div class="pWrapper">
+          <p class="time">1hr</p> <!-- daily -->
+          <p class="previous"><span class="previousWords"> Yesterday </span> - <span class="previousTime">3hrs</span></p> <!-- daily -->
+        </div>
+
+        <div hidden> 15hrs <!-- weekly -->
+        Previous - 10hrs <!-- weekly -->
+        21hrs <!-- monthly -->
+        Previous - 23hrs <!-- monthly --></div>
+      </div>
+
+      <div class="card" id="selfCare">
+        <p class="title">Self Care</p>
+        <div class="pWrapper">
+          <p class="time">0hr</p> <!-- daily -->
+          <p class="previous"><span class="previousWords"> Yesterday </span> - <span class="previousTime">1hr</span></p> <!-- daily -->
+        </div>
+        
+        <div hidden>2hrs <!-- weekly -->
+        Previous - 2hrs <!-- weekly -->
+        7hrs <!-- monthly -->
+        Previous - 11hrs <!-- monthly --></div>
+      </div>
+    </section> 
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/lydia-eluro/" target="blank">Eluro Lydia Ogorchukwu</a>.
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

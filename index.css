@@ -1,0 +1,329 @@
+/* @font-face{
+    font-family: "Rubik";
+    src: url("https://fonts.google.com/specimen/Rubik");
+} */
+
+
+body {
+    box-sizing: border-box;
+    background-color: hsl(226, 43%, 10%);
+    font-family: "Rubik", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+    grid-gap: 25px;
+    padding: 50px 5%;
+}
+
+#section1{
+    box-sizing: border-box;
+    background-color: hsl(235, 46%, 20%);
+    height: 225px;
+    border-radius: 12px;
+}
+
+#profile{
+    box-sizing: border-box;
+    height: 150px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 12px 12px 9px 9px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profilePt2{
+    padding-left: 25px;
+}
+
+small{
+    font-size: 11px;
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+
+.name{
+    font-size: 1.5em;
+    color: hsl(236, 100%, 87%);
+    line-height: 10px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+#time{
+    box-sizing: border-box;
+    background-color: hsl(235, 46%, 20%);
+    height: 75px;
+    border-radius: 0px 0px 12px 12px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#time>p{
+    margin: auto 0px;   
+}
+
+button{
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    color: hsl(235, 45%, 61%);
+    outline: none;
+}
+
+button:active{
+    color: pink;
+}
+
+button:hover{
+    color: hsl(236, 100%, 87%);
+}
+
+#section2{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+    /* top: 20px; */
+}
+
+.card{
+    box-sizing: border-box;
+    height: 80%;
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    /* border-top: blanchedalmond 28px solid; */
+    /* border: solid; */
+    border-radius: 12px;
+    padding: 2px 0 12px 20px
+}
+
+.card:hover {
+    /* background-color: white; */
+    animation: zoom-in-zoom-out 2s ease-out
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }}
+
+#work{
+    box-shadow: 0 -20px 0 0 hsl(15, 100%, 70%);
+}
+
+#play{
+    box-shadow: 0 -20px 0 0 hsl(195, 74%, 62%);
+}
+
+#study{
+    box-shadow: 0 -20px 0 0 hsl(348, 100%, 68%);
+}
+
+#exercise{
+    box-shadow: 0 -20px 0 0 hsl(145, 58%, 55%);
+}
+
+#social{
+    box-shadow: 0 -20px 0 0 hsl(264, 64%, 52%);
+}
+
+#selfCare{
+    box-shadow: 0 -20px 0 0 hsl(43, 84%, 65%);
+}
+
+.title{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+.time{
+    font-size: 30px;
+    color: white;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+    /* display: inline;
+    word-wrap: break-word; */
+}
+
+.previous{
+    font-size: 13px;
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+    /* display: inline;
+    word-wrap: break-word; */
+    position: relative;
+    left: 50%;
+    /* margin-left: 50%; */
+}
+
+.pWrapper{
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+}
+
+footer{
+    margin: 0 auto;
+    color: blanchedalmond;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    body {
+        height: 100vh;
+    }
+    
+    main{
+        box-sizing: border-box;
+        display: grid;
+        /* grid-template-rows: 0 0;*/
+        grid-template-columns: 25% 75%;
+        height: 99.5%;
+        /* grid-template-areas: 1 1 1 1; */
+        padding: 20vh 8%;
+    }
+    
+    #section1{
+        box-sizing: border-box;
+        background-color: hsl(235, 46%, 20%);
+        width: 90%;
+        position: relative;
+        /* height: inherit; */
+        border-radius: 12px;
+    }
+    
+    #profile{
+        box-sizing: border-box;
+        /* height: 60%; */
+        height: 225px;
+        background-color: hsl(246, 80%, 60%);
+        border-radius: 12px 12px 9px 9px;
+        padding: 20px;
+        /* display: grid;
+        grid-template-rows: 25% 65%; */
+        display: block;
+    }
+
+    img{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin-bottom: 12px;
+    }
+
+    .profilePt2{
+        padding-left: 0px;
+    }
+    
+    small{
+        font-size: 13px;
+        color: hsl(236, 100%, 87%);
+        font-weight: 300;
+    }
+
+    .profilePt2>p{
+        margin: 0px;
+    }
+
+    .lastName{
+        display: block;
+    }
+    
+    .name{
+        font-size: 30px;
+        color: white;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    
+    #time{
+        box-sizing: border-box;
+        background-color: hsl(235, 46%, 20%);
+        /* height: 30%; */
+        height: 110px;
+        border-radius: 0px 0px 12px 12px;
+        padding: 20px;
+        display: block
+    }
+    
+    #time>p{
+        margin: 0px 0px;    
+        line-height: 28px;
+    }
+    
+    #section2{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-areas: 
+                    '1 2 3'
+                    '4 5 6';
+        /* grid-template-columns: auto auto auto; */
+        grid-gap: 12px;
+        position: relative;
+        top: 20px;
+    }
+    
+    .card{
+        box-sizing: border-box;
+        height: 90%;
+        width: 90%;
+        background-color: hsl(235, 46%, 20%);
+        /* border-top: blanchedalmond 28px solid; */
+        /* border: solid; */
+        border-radius: 12px;
+        padding: 2px 0 12px 20px;
+    }
+    
+    .title{
+        font-size: 18px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .time{
+        font-size: 30px;
+        color: white;
+        line-height: 30px;
+        font-weight: 500;
+        margin-top: 0px;
+    }
+    
+    .previous{
+        font-size: 13px;
+        color: hsl(236, 100%, 87%);
+        font-weight: 300;
+        margin-left: 0;
+        margin-top: 0;
+        position: relative;
+        left: 0%;
+    }
+
+    .pWrapper{
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
+    
+}
